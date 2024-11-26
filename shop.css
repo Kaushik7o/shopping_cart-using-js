@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    
+}
+body{
+    font-family: "poppins";
+    height: 100vh;
+}
+.myImage{
+    height: 200px;
+    width: 200px;
+}
+.cartImgElement{
+    height: 40px;
+    width: 40px;
+}
+.logo img{
+    height: 50px;width: 50px;
+}
+
+.navbar{
+    background-color: lightblue;
+    width: 77.7%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    height: 62px;
+    width: 70px;
+}
+.cart-icon{
+    margin-right: 1.4rem;
+    position: relative;
+}
+
+.cart-icon i{
+    font-size: 30px;
+}
+
+.cart-icon sup{
+    position: absolute;
+    background-color: white;
+    font-weight: bold;
+    padding: 0rem .3rem;
+    font-family: "Poppins";
+    font-size: 12px;
+    border-radius: 100%;
+    top:-25%;
+    right: -26%;
+    /* padding: 0px 4px; */
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    overflow: hidden;
+}
+
+.renderData{
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 320px 320px 320px;
+    grid-auto-rows: 320px ;
+    gap: 20px;
+    background-color: #fff;
+    width: 80%;
+    justify-content: center;
+    margin-top: 20px;
+    overflow-y: scroll;
+}
+
+.renderCartData{
+    height:100%;
+    width:300px;
+    background-color:#fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    overflow-y: scroll;
+    /* position: relative; */
+}
+
+.renderCartData::-webkit-scrollbar{
+    display: none;
+}
+.renderData::-webkit-scrollbar{
+    display: none;
+}
+.box-main{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    gap: 10px;
+   line-height: 16px;
+}
+.title{
+    white-space: nowrap;
+    align-self: center;
+  
+    /* width: 70%; */
+    padding: 0px 10px;
+    
+}
+.title::-webkit-scrollbar{
+    display: none;
+}
+
+.btn{
+    background-color: rgb(130, 103, 158);color: #fff;
+    font-weight: 500;border: none;
+    font-size: 18px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+}
+.myImage{
+    height: 180px;
+}
+.cart-item{
+    background-color: lightblue;
+   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 69.2px;
+    align-self: start;
+    width: 100%;
+
+}
+.contain{
+    display: flex;
+    justify-content: space-between;
+  
+    align-items: center;
+    width: 96%;
+    margin-top: 20px;
+    padding-bottom: 17.8px;
+    border: none;
+   
+    
+}
+
+.hr2{
+    width: 100%;
+    color: transparent;
+    border: 1px solid rgba(128, 128, 128, 0.288);
+    /* box-shadow: 0px 3px 10px gray; */
+}
+#delete{
+    justify-self: end;
+    padding-left: 40px;
+}
+.priceCart{
+    width: 50px;  
+}
+#sum{
+    position: absolute;
+    bottom: 50px;
+    left:0px;
+    
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    align-items: center;
+}
+
+.up{
+    width: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 3.4px;
+}
+.range{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+   
+}
+#confirmPurchase{
+    display: none;
+    position: absolute;
+    bottom: 2%;
+    background-color: lightblue;
+    padding: 7px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-size: 18px;
+    width: 80%;
+    left: 38px;
+    border: none;
+    outline: none;
+
+
+}
+input[type="search"]
+{
+    border: none;
+    outline: none;
+    border-radius:50px ;
+    width: 400px;
+    padding:8px 10px;
+}
+#search-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding:2px 20px;
+    border-radius:50px ;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+     <div class="navbar-container">
+       <div class="navbar"> 
+       <div class="logo">
+        <img src="./Shopping-cart-logo-by-DEEMKA-STUDIO-removebg-preview (1).png" alt="" style="">
+       </div>
+       <div id="search-div"><input type="search" placeholder="Search item here" id="search" > <span onclick="focus1()"><i class="fa-solid fa-magnifying-glass" style="font-size: 14px;"></i></span></div>
+       <div class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <sup class="dynamic-count">0</sup>
+       </div>
+    </div> 
+     </div>
+
+<div class="main-container">
+ 
+    <div class="renderData"></div>
+
+    <div class="renderCartData">
+        <h1 class="cart-item">Your Cart Items</h1><br>
+        <hr style="align-self: start;width: 100%;">
+        <!-- <div id="containContainer" style="display: flex;"></div> -->
+        <div id="sum"><span>Total :</span><span id="total"></span></div>
+        <button id="confirmPurchase">Confirm purchase</button>
+    </div>
+</div>
+    <script src="./shop.js"></script>
+</body>
+</html>
